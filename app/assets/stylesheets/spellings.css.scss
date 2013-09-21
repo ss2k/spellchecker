@@ -1,0 +1,21 @@
+// Place all the styles related to the Spellings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.correct {
+  font-weight: bold;
+  color: green;
+}
+
+.incorrect {
+  font-weight: bold;
+  color: red;
+}
+
+.word {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.suggestion {
+  font-style: italic;
+}

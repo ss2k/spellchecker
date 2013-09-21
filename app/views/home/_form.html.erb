@@ -1,0 +1,5 @@
+Enter your word:
+<%= form_tag spellings_path, method: 'get' do %>
+  <%= text_field_tag :word %>
+  <%= submit_tag "Spell", name: nil %>
+<% end %>

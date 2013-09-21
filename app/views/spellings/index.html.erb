@@ -1,0 +1,21 @@
+<h1>Spell Checker</h1>
+The word you inputted was <span class="word"><%= @word %></span>.
+<p>
+  <% if @suggestions %>
+    The word was <span class="incorrect">misspelled</span>. Did you mean <b><%= @suggestions.first %></b>?
+    <p>
+      Other suggestions are as follows:
+    </p><p>
+      <ul>
+        <% @suggestions[1..-1].each do |s| %>
+          <li><span class="suggestion"><%= s %></span></li>
+        <% end %>
+      </ul>
+    </p>
+  <% else %>
+    You were <span class="correct">correct</span>.
+  <% end %>
+  <p>
+    <%= link_to "Spell another word", root_url %>
+  </p>
+</p>
