@@ -5,7 +5,8 @@ class SpellingsController < ApplicationController
       redirect_to root_url
     end
   	@word = params[:word]
-    speller = FFI::Aspell::Speller.new('en_US')
-  	@suggestions = speller.suggestions(@word) unless speller.correct?(@word)
+    speller = FFI::Hunspell.dict('en_US')
+  	@suggestions = speller.suggest(@word) unless speller.check?(@word)
+    speller.close
   end
 end

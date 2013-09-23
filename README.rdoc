@@ -1,3 +1,3 @@
 == Spellchecker
 
-This is a spellchecker that uses Aspell to check for correct spelling.
+This is a spellchecker that uses Hunspell to check for correct spelling.
