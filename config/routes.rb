@@ -1,4 +1,4 @@
-Rails::Application.routes.draw do
+Spellcheck::Application.routes.draw do
   get "home/index"
 
   resources :spellings
